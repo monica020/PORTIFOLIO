@@ -1,10 +1,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
     background-color: #f4f4f4;
     color: #333;
+    padding-top: 10px;
 }
 nav{
   background-color: black;
@@ -24,6 +25,7 @@ ul{
   list-style: none;
   justify-content: space-between;
 }
+
 
 .container {
     width: 80%;
@@ -45,7 +47,7 @@ header h1 {
 header nav ul {
     list-style: none;
     text-align: center;
-    padding: 0;
+    padding:0;
 }
 
 header nav ul li {
@@ -55,6 +57,50 @@ header nav ul li {
 
 header nav ul li a {
     font-size: 18px;
+}
+/* about */
+.hero{
+  background-color: rgb(29, 29, 148);
+  height: 200px;
+  color: black;
+  padding-top: 90px;
+  text-align: center;
+}
+nav{
+  padding-bottom: 10px;
+
+}
+/* contact */
+
+.contact form {
+
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.contact button {
+  padding: 10px 20px;
+  background-color: #73eb79;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #73eb79;
 }
 
 /* Sections */
@@ -74,13 +120,17 @@ h2 {
 p {
     font-size: 16px;
     line-height: 1.6;
-    text-align: center;
+    
 }
+.work{
+  grid-template-columns: auto auto auto;
+}
+
 
 /* Projects Section */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns:auto auto auto;
     gap: 30px;
     margin-top: 20px;
 }
@@ -90,7 +140,7 @@ p {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    
 }
 
 .project img {
